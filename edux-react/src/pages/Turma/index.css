@@ -1,0 +1,9 @@
+.Sobre{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.Sobre h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
