@@ -107,8 +107,14 @@ const AlunoTurma = () => {
             <div className="body">
                 <Menu />
                 <Titulo titulo="AlunoTurma" chamada={<h2>Matriculas registradas</h2>} />
+                            <div className="espaco">
+                        <div className="bg">
+
                 <Container>
                     
+                        <div className="Fundo">
+
+
                     <Card>
                         <Card.Body>
                             <Form onSubmit={event => Cadastrar(event)}>
@@ -122,7 +128,7 @@ const AlunoTurma = () => {
                             </Form>
                         </Card.Body>
                     </Card>
-
+                    <Card>
                     <Table  bordered className="table">
                         <thead>
                             <tr>
@@ -133,8 +139,8 @@ const AlunoTurma = () => {
                         <tbody>
                             {
                                 alunosTurma.map((item, index) => {
-                                return (
-                                    <tr key={index}>
+                                    return (
+                                        <tr key={index}>
                                         
                                         <td>{item.matricula}</td>
                                         <td>{item.idTurma}</td>
@@ -145,13 +151,16 @@ const AlunoTurma = () => {
                                         </td>
                                     </tr>
                                 )
-                                })
-                            }
+                            })
+                        }
                             
                         </tbody>
                     </Table>
-
+                        </Card>
+                        </div>
                 </Container>
+                        </div>
+                        </div>
             </div>
 
             <Rodape />

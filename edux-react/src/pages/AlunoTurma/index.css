@@ -1,9 +1,15 @@
-.Sobre{
-    display: flex;
-    justify-content: center;
-    padding: 70px;
+
+.bg{
+    background-repeat: no-repeat;
+    background-image: url('http://www.pinhais.pr.gov.br/seminariointernacional/wp-content/uploads/2017/08/cropped-bg_seminarioPrancheta_1.png%27');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.Sobre h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.espaco{
+    padding: 0px 0px 150px 0px;
+}
+
+.Fundo{
+    padding: 50px 0px 50px 0px;
 }

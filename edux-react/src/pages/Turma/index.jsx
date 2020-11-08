@@ -97,16 +97,20 @@ const Turma = () => {
         setDescricao('');
 
     }
-
+    
 
     return (
-
+        
         <div className="bodygeral">
             <div className="body">
                 <Menu />
                 <Titulo titulo="Turma" chamada={<h2>Turmas registradas</h2>} />
+                <div className="espaco">
+
+            <div className="bg">
                 <Container>
-                    
+                    <div className="Fundo">
+
                     <Card>
                         <Card.Body>
                             <Form onSubmit={event => Cadastrar(event)}>
@@ -121,6 +125,8 @@ const Turma = () => {
                         </Card.Body>
                     </Card>
 
+
+                    <Card>
                     <Table  bordered className="table">
                         <thead>
                             <tr>
@@ -131,8 +137,8 @@ const Turma = () => {
                         <tbody>
                             {
                                 Turma.map((item, index) => {
-                                return (
-                                    <tr key={index}>
+                                    return (
+                                        <tr key={index}>
                                         
                                         <td>{item.idTurma}</td>
                                         <td>{item.descricao}</td>
@@ -143,13 +149,17 @@ const Turma = () => {
                                         </td>
                                     </tr>
                                 )
-                                })
-                            }
+                            })
+                        }
                             
                         </tbody>
                     </Table>
 
+                </Card>
+                        </div>
                 </Container>
+                        </div>
+                        </div>
             </div>
 
             <Rodape />
